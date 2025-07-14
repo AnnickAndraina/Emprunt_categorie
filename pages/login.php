@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <link href="../bootstrap-5.3.5-dist/css/bootstrap.min.css" rel="stylesheet">
-  <link href="../assets/css/style.css" rel="stylesheet"> <!-- Garde-le si tu mets du style custom -->
+  <link href="../assets/bootstrap-5.3.5-dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="../assets/css/style.css" rel="stylesheet"> 
   <title>Connexion</title>
 </head>
 <body class="bg-light d-flex justify-content-center align-items-center min-vh-100">
