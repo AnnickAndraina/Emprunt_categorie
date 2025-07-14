@@ -5,9 +5,14 @@ CREATE TABLE membre (
     Genre ENUM('Homme', 'Femme'), 
     Email VARCHAR(1000) DEFAULT NULL,
     Ville VARCHAR(100) DEFAULT NULL,
-    Motdepasse VARCHAR(100) DEFAULT NULL,
-    DateNaissance DATE DEFAULT NULL
+    mdp VARCHAR(100) DEFAULT NULL,
+    image_profil VARCHAR (500)
 );
 
+CREATE TABLE categorie_objet (
+    id_categorie INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
+    nom_categorie VARCHAR (100)
+);
 
-membre (id_membre, nom , date de naissance, genre, émail, ville, mdp, image_profil)
+categorie_objet (id_categorie, nom_categorie )
+
