@@ -12,15 +12,15 @@
   <div class="card shadow-sm p-4" style="width: 100%; max-width: 400px;">
     <h3 class="text-center mb-4">Connectez-vous</h3>
 
-    <form action="accueil.php" method="POST">
+    <form action="../traitement/traitement_connexion.php" method="POST">
       <div class="mb-3">
         <label for="username" class="form-label">Email :</label>
-        <input type="text" class="form-control" id="username" name="username" required />
+        <input type="text" class="form-control" value="koto@gmail.com"id="username" name="username" required />
       </div>
 
       <div class="mb-3">
         <label for="password" class="form-label">Mot de passe :</label>
-        <input type="password" class="form-control" id="password" name="password" required />
+        <input type="password" class="form-control" value="lalala"id="password" name="password" required />
       </div>
 
       <button type="submit" class="btn btn-primary w-100">Connexion</button>
