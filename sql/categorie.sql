@@ -14,5 +14,23 @@ CREATE TABLE categorie_objet (
     nom_categorie VARCHAR (100)
 );
 
-categorie_objet (id_categorie, nom_categorie )
+CREATE TABLE objet(
+    id_objet INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
+    nom_objet VARCHAR (100),
+    id_categorie INT,
+    id_membre INT,
+    FOREIGN KEY (id_categorie) REFERENCES categorie_objet(id_categorie),
+    FOREIGN KEY (id_membre) REFERENCES membre(id_membre),
+);
+
+CREATE TABLE images_objet(
+    id_image INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
+    id_objet INT,
+    nom_image VARCHAR(100),
+    FOREIGN KEY (id_objet) REFERENCES objet(id_objet),
+);
+
+
+
+
 
